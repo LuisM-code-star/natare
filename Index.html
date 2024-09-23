@@ -1,210 +1,57 @@
 <!DOCTYPE html>
-<html lang= "es"-MX >
+<html lang="es-MX">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
- text-align: center;
-}
-
-.imagen1 {
- display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-height: auto;
-}
-
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-}
-
-
-/* If the screen size is 601px or more, set the font-size of <div> to 80px */
-@media only screen and (min-width: 601px) {
-  div.ejemplo {
-background-color: rgb(99, 68, 223);
-    font-size: 15px;
-color:white;
-  }
-}
-
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
-  div.ejemplo {
-background-color: rgb(99, 68, 223);
-font-family: Garamond;
-    font-size: 20px;
-color: white;
-  }
-}
-
-
-.menu {
-list-style: none;
-padding: 0;
-background-color: rgb(34, 5, 152);
-width: 55%;
-max-width: 1000px;
-margin: auto;
-font-size:150%;
-}
-
-.menu li a {
-text-decoration: none;
-color: white;
-padding: 20px;
-display: block;
-}
-
-.menu li {
-display: inline-block;
-text-align: center;
-}
-
-.menu li a:hover {
-background-color: rgb(49, 208, 227);
-}
-
-body {
-background-color: rgb(99, 68, 223);
-}
-
-h1 {
-font-family: Garamond;
-color: white;
-font-size: 400%;
-}
-
-
-h2 {
-font-family: Garamond;
-font-size: 300%;
-text-align: center
-}
-
-h3 {
-font-family: Garamond;
-font-size: 200%;
-text-align:left;
-margin-left: 25px;
-}
-
-.nosotros {
-font-family: Garamond;
-   font-size: 20px;
-}
-
-p {
-font-family: arial;
-font-size: 100%;
-text-align:left;
-margin: 25px 25px 25px 25px;
-}
-
-.buscar{
-text-align: center;
-}
-
-.buscar input {
-width: 350px;
-height: 35px;
-padding: 0 20px;
-font-size: 15px;
-outline: none;
-border: 1px solid silver;
-border-radius: 20px;
-}
-
-</style>
-
-<title>Natare</title>	
-<meta charset="UTF-8">
-<meta name="description" content="Equipamiento de natación"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Equipamiento de natación">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natare</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+  <h1 tabindex="1">Natare</h1>
 
-<center><h1 tabindex="1">Natare</h1> </center>
+  <div class="row">
+    <div class="col-12 ejemplo">
+      <ul class="menu">
+        <li tabindex="2"><a href="ropa.html">Ropa</a></li>
+        <li tabindex="3"><a href="accesorios.html">Accesorios</a></li>
+        <li tabindex="4"><a href="calzado.html">Calzado</a></li>
+        <li tabindex="5"><a href="nosotros.html">Nosotros</a></li>
+        <li tabindex="6"><a href="natacion.html">Natación</a></li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-12 ejemplo buscar">
+      <input tabindex="7" type="text" placeholder="Buscar">
+    </div>
+  </div>
 
-<div class="row">
-	<div class="col-12 ejemplo">
-<ul class="menu">
-<li tabindex="2"><a href="ropa.html">Ropa</a></li>
-<li tabindex="3"><a href="accesorios.html">Accesorios</a></li>
-<li tabindex="4"><a href="calzado.html">Calzado</a></li>
-<li tabindex="5"><a href="nosotros.html">Nosotros</a></li>
-<li tabindex="6"><a href="natacion.html">Natación</a></li>
-</ul>
-	</div>
-</div>
+  <div class="row">
+    <div class="col-6 ejemplo">
+      <img class="imagen1" src="imagenes/natare.png" alt="Natare">
+      <p tabindex="8">Nada con confianza, nada con nosotros. Expertos en equipamiento de natación.</p>
+    </div>
 
-<div class="row">
-	<div class="col-12 ejemplo buscar">
-	<input tabindex="7" type="text" placeholder="Buscar">
-	</div>
-</div>
-	
-	<div class="row">
-			<div class="col-6 ejemplo">
-<img class="imagen1"  src="imagenes/natare.png"/> <p tabindex="8">Nada con confianza, nada con nosotros. Expertos en equipamiento de natación.</p>
-			</div>
+    <div class="col-6 ejemplo">
+      <p tabindex="9" class="nosotros">En Natare nos dedicamos a la venta de ropa y equipo de natación para todo público. Accesorios para cada necesidad: nivel competitivo, amateur, niñas y niños, adultos, equipo para nado abierto y todo lo que puedas necesitar.</p>
 
-			<div class="col-6 ejemplo">
-<p tabindex="9" class="nosotros">En Natare nos dedicamos a la venta de ropa y equipo de natación para todo público. Accesorios para cada necesidad: nivel competitivo, amateur, niñas y niños, adultos, equipo para nado abierto y todo lo que puedas necesitar.</p>
+      <img class="imagen1" src="imagenes/nado.jpg" alt="Nado">
+      
+      <p tabindex="10" class="nosotros">Natare impulsa el deporte de la natación. Encontrarás información relacionada con este deporte.</p>
+    </div>
+  </div>
 
-<img class="imagen1" src="imagenes/nado.jpg"/>
-
-<p tabindex="10" class="nosotros">Natare impulsa el deporte de la natación. Encontrarás información relacionada con este deporte.</p>
-			</div>
-	</div>
-
-	<div class="row">
-		<div class="col-12 ejemplo">
-		<video tabindex="11" source src="imagenes/natarepublicidad.mp4" type="video/mp4" controls poster>
-		</video>
-	</div>
+  <div class="row">
+    <div class="col-12 ejemplo">
+      <video tabindex="11" controls poster>
+        <source src="imagenes/natarepublicidad.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+  </div>
 
 </body>
 </html>

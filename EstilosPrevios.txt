@@ -1,0 +1,1038 @@
+Accesorios
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ text-align: center;
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+    font-size: 15px;
+color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+font-family: Garamond;
+    font-size: 20px;
+color: white;
+  }
+}
+
+
+.menu {
+list-style: none;
+padding: 0;
+background-color: rgb(34, 5, 152);
+width: 50%;
+max-width: 1000px;
+margin: auto;
+font-size:150%;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li {
+display: inline-block;
+text-align: center;
+}
+
+.menu li a:hover {
+background-color: rgb(49, 208, 227);
+}
+
+body {
+background-color: rgb(99, 68, 223);
+}
+
+.boton {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 12px;
+}
+
+.boton:hover {
+background-color: rgb(169, 2, 177);
+  color: white;
+}
+
+h1 {
+font-family: Garamond;
+color: white;
+font-size: 400%;
+}
+
+
+h2 {
+font-family: Garamond;
+font-size: 300%;
+text-align: center
+}
+
+h3 {
+font-family: Garamond;
+font-size: 200%;
+text-align:left;
+margin-left: 25px;
+}
+
+
+p {
+font-family: arial;
+font-size: 100%;
+text-align:left;
+margin: 25px 25px 25px 25px;
+}
+
+.buscar{
+text-align: center;
+}
+
+.buscar input {
+width: 350px;
+height: 35px;
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: 1px solid silver;
+border-radius: 20px;
+}
+
+
+</style>
+
+Calzado
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ text-align: center;
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+    font-size: 15px;
+color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+font-family: Garamond;
+    font-size: 20px;
+color: white;
+  }
+}
+
+
+.menu {
+list-style: none;
+padding: 0;
+background-color: rgb(34, 5, 152);
+width: 50%;
+max-width: 1000px;
+margin: auto;
+font-size:150%;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li {
+display: inline-block;
+text-align: center;
+}
+
+.menu li a:hover {
+background-color: rgb(49, 208, 227);
+}
+
+body {
+background-color: rgb(99, 68, 223);
+}
+
+.boton {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 12px;
+}
+
+.boton:hover {
+background-color: rgb(169, 2, 177);
+  color: white;
+}
+
+h1 {
+font-family: Garamond;
+color: white;
+font-size: 400%;
+}
+
+
+h2 {
+font-family: Garamond;
+font-size: 300%;
+text-align: center
+}
+
+h3 {
+font-family: Garamond;
+font-size: 200%;
+text-align:left;
+margin-left: 25px;
+}
+
+
+p {
+font-family: arial;
+font-size: 100%;
+text-align:left;
+margin: 25px 25px 25px 25px;
+}
+
+.buscar{
+text-align: center;
+}
+
+.buscar input {
+width: 350px;
+height: 35px;
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: 1px solid silver;
+border-radius: 20px;
+}
+
+
+</style>
+
+Index
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ text-align: center;
+}
+
+.imagen1 {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+    font-size: 15px;
+color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+font-family: Garamond;
+    font-size: 20px;
+color: white;
+  }
+}
+
+
+.menu {
+list-style: none;
+padding: 0;
+background-color: rgb(34, 5, 152);
+width: 55%;
+max-width: 1000px;
+margin: auto;
+font-size:150%;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li {
+display: inline-block;
+text-align: center;
+}
+
+.menu li a:hover {
+background-color: rgb(49, 208, 227);
+}
+
+body {
+background-color: rgb(99, 68, 223);
+}
+
+h1 {
+font-family: Garamond;
+color: white;
+font-size: 400%;
+}
+
+
+h2 {
+font-family: Garamond;
+font-size: 300%;
+text-align: center
+}
+
+h3 {
+font-family: Garamond;
+font-size: 200%;
+text-align:left;
+margin-left: 25px;
+}
+
+.nosotros {
+font-family: Garamond;
+   font-size: 20px;
+}
+
+p {
+font-family: arial;
+font-size: 100%;
+text-align:left;
+margin: 25px 25px 25px 25px;
+}
+
+.buscar{
+text-align: center;
+}
+
+.buscar input {
+width: 350px;
+height: 35px;
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: 1px solid silver;
+border-radius: 20px;
+}
+
+</style>
+
+Natación
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ text-align: center;
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+    font-size: 15px;
+color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+font-family: Garamond;
+    font-size: 20px;
+color: white;
+  }
+}
+
+
+.menu {
+list-style: none;
+padding: 0;
+background-color: rgb(34, 5, 152);
+width: 50%;
+max-width: 1000px;
+margin: auto;
+font-size:150%;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li {
+display: inline-block;
+text-align: center;
+}
+
+.menu li a:hover {
+background-color: rgb(49, 208, 227);
+}
+
+body {
+background-color: rgb(99, 68, 223);
+}
+
+.boton {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 12px;
+}
+
+.boton:hover {
+background-color: rgb(169, 2, 177);
+  color: white;
+}
+
+h1 {
+font-family: Garamond;
+color: white;
+font-size: 400%;
+}
+
+
+h2 {
+font-family: Garamond;
+font-size: 300%;
+text-align: center
+}
+
+h3 {
+font-family: Garamond;
+font-size: 200%;
+text-align:left;
+margin-left: 25px;
+}
+
+
+p {
+font-family: arial;
+font-size: 100%;
+text-align:left;
+margin: 25px 25px 25px 25px;
+}
+
+.nosotros {
+font-family: Garamond;
+   font-size: 20px;
+}
+
+
+a.contacto:link {
+font-family: Garamond;
+   font-size: 20px;
+  color: white;
+margin-left: 25px;
+}
+
+
+a.contacto:hover {
+font-family: Garamond;
+   font-size: 20px;
+  color: white;
+background-color: rgb(49, 208, 227);
+margin-left: 25px;
+}
+
+.buscar{
+text-align: center;
+}
+
+.buscar input {
+width: 350px;
+height: 35px;
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: 1px solid silver;
+border-radius: 20px;
+}
+
+</style>
+
+Nosotros
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ text-align: center;
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+    font-size: 15px;
+color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+font-family: Garamond;
+    font-size: 20px;
+color: white;
+  }
+}
+
+
+.menu {
+list-style: none;
+padding: 0;
+background-color: rgb(34, 5, 152);
+width: 50%;
+max-width: 1000px;
+margin: auto;
+font-size:150%;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li {
+display: inline-block;
+text-align: center;
+}
+
+.menu li a:hover {
+background-color: rgb(49, 208, 227);
+}
+
+body {
+background-color: rgb(99, 68, 223);
+}
+
+.boton {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 12px;
+}
+
+.boton:hover {
+background-color: rgb(169, 2, 177);
+  color: white;
+}
+
+h1 {
+font-family: Garamond;
+color: white;
+font-size: 400%;
+}
+
+
+h2 {
+font-family: Garamond;
+font-size: 300%;
+text-align: center
+}
+
+h3 {
+font-family: Garamond;
+font-size: 200%;
+text-align:left;
+margin-left: 25px;
+}
+
+
+p {
+font-family: arial;
+font-size: 100%;
+text-align:left;
+margin: 25px 25px 25px 25px;
+}
+
+.nosotros {
+font-family: Garamond;
+   font-size: 20px;
+}
+
+
+a.contacto:link {
+font-family: Garamond;
+   font-size: 20px;
+  color: white;
+margin-left: 25px;
+}
+
+
+a.contacto:hover {
+font-family: Garamond;
+   font-size: 20px;
+  color: white;
+background-color: rgb(49, 208, 227);
+margin-left: 25px;
+}
+
+.buscar{
+text-align: center;
+}
+
+.buscar input {
+width: 350px;
+height: 35px;
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: 1px solid silver;
+border-radius: 20px;
+}
+
+</style>
+
+Ropa
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ text-align: center;
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+    font-size: 15px;
+color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.ejemplo {
+background-color: rgb(99, 68, 223);
+font-family: Garamond;
+    font-size: 20px;
+color: white;
+  }
+}
+
+
+.menu {
+list-style: none;
+padding: 0;
+background-color: rgb(34, 5, 152);
+width: 55%;
+max-width: 1000px;
+margin: auto;
+font-size:150%;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li {
+display: inline-block;
+text-align: center;
+}
+
+.menu li a:hover {
+background-color: rgb(49, 208, 227);
+}
+
+body {
+background-color: rgb(99, 68, 223);
+}
+
+.boton {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 12px;
+}
+
+.boton:hover {
+background-color: rgb(169, 2, 177);
+  color: white;
+}
+
+h1 {
+font-family: Garamond;
+color: white;
+font-size: 400%;
+}
+
+
+h2 {
+font-family: Garamond;
+font-size: 300%;
+text-align: center
+}
+
+h3 {
+font-family: Garamond;
+font-size: 200%;
+text-align:left;
+margin-left: 25px;
+}
+
+
+p {
+font-family: arial;
+font-size: 100%;
+text-align:left;
+margin: 25px 25px 25px 25px;
+}
+
+.buscar{
+text-align: center;
+}
+
+.buscar input {
+width: 350px;
+height: 35px;
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: 1px solid silver;
+border-radius: 20px;
+}
+
+</style>

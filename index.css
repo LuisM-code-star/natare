@@ -1,0 +1,213 @@
+/* =========================
+    CSS Común a Todas las Páginas
+   ========================= */
+
+/* Box Sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Imágenes Responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Videos Responsivos */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sistema de Filas y Columnas */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Columnas para Dispositivos Móviles */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Columnas para Pantallas de Escritorio */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* Estilos para el Contenedor Principal */
+div.ejemplo {
+    background-color: rgb(99, 68, 223);
+    color: white;
+}
+
+@media only screen and (min-width: 601px) {
+    div.ejemplo {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.ejemplo {
+        font-family: Garamond;
+        font-size: 20px;
+    }
+}
+
+/* Menú de Navegación */
+.menu {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(34, 5, 152);
+    width: 55%;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 150%;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: rgb(49, 208, 227);
+}
+
+/* Estilos del Cuerpo */
+body {
+    background-color: rgb(99, 68, 223);
+    margin: 0;
+    padding: 0;
+}
+
+/* Botones */
+.boton {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.boton:hover {
+    background-color: rgb(169, 2, 177);
+    color: white;
+}
+
+/* Encabezados */
+h1 {
+    font-family: Garamond, serif;
+    color: white;
+    font-size: 400%;
+    text-align: center;
+}
+
+h2 {
+    font-family: Garamond, serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+h3 {
+    font-family: Garamond, serif;
+    font-size: 200%;
+    text-align: left;
+    margin-left: 25px;
+}
+
+/* Párrafos */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    text-align: left;
+    margin: 25px;
+}
+
+/* Clase Específica */
+.nosotros {
+    font-family: Garamond, serif;
+    font-size: 20px;
+}
+
+/* Buscador */
+.buscar {
+    text-align: center;
+}
+
+.buscar input {
+    width: 350px;
+    height: 35px;
+    padding: 0 20px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+
+/* =========================
+    Estilos Específicos por Página
+   ========================= */
+
+/* Nosotros.html */
+/* Estilos para enlaces de contacto */
+a.contacto:link {
+    font-family: Garamond, serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 25px;
+}
+
+a.contacto:hover {
+    font-family: Garamond, serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(49, 208, 227);
+    margin-left: 25px;
+}
+
+/* =========================
+    Otros Estilos Específicos
+   ========================= */
+
+/* Si en el futuro hay estilos únicos para otras páginas, se pueden añadir aquí */
+/* Por ejemplo:
+
+/* ropa.html */
+/* Estilos únicos para ropa.html */
+
+/* calzado.html */
+/* Estilos únicos para calzado.html */
+

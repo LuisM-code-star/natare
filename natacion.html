@@ -1,267 +1,80 @@
 <!DOCTYPE html>
-<html lang= "es"-MX >
+<html lang="es-MX">
 <head>
-<style>
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
- text-align: center;
-}
-
-
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-}
-
-
-/* If the screen size is 601px or more, set the font-size of <div> to 80px */
-@media only screen and (min-width: 601px) {
-  div.ejemplo {
-background-color: rgb(99, 68, 223);
-    font-size: 15px;
-color:white;
-  }
-}
-
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
-  div.ejemplo {
-background-color: rgb(99, 68, 223);
-font-family: Garamond;
-    font-size: 20px;
-color: white;
-  }
-}
-
-
-.menu {
-list-style: none;
-padding: 0;
-background-color: rgb(34, 5, 152);
-width: 50%;
-max-width: 1000px;
-margin: auto;
-font-size:150%;
-}
-
-.menu li a {
-text-decoration: none;
-color: white;
-padding: 20px;
-display: block;
-}
-
-.menu li {
-display: inline-block;
-text-align: center;
-}
-
-.menu li a:hover {
-background-color: rgb(49, 208, 227);
-}
-
-body {
-background-color: rgb(99, 68, 223);
-}
-
-.boton {
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-border-radius: 12px;
-}
-
-.boton:hover {
-background-color: rgb(169, 2, 177);
-  color: white;
-}
-
-h1 {
-font-family: Garamond;
-color: white;
-font-size: 400%;
-}
-
-
-h2 {
-font-family: Garamond;
-font-size: 300%;
-text-align: center
-}
-
-h3 {
-font-family: Garamond;
-font-size: 200%;
-text-align:left;
-margin-left: 25px;
-}
-
-
-p {
-font-family: arial;
-font-size: 100%;
-text-align:left;
-margin: 25px 25px 25px 25px;
-}
-
-.nosotros {
-font-family: Garamond;
-   font-size: 20px;
-}
-
-
-a.contacto:link {
-font-family: Garamond;
-   font-size: 20px;
-  color: white;
-margin-left: 25px;
-}
-
-
-a.contacto:hover {
-font-family: Garamond;
-   font-size: 20px;
-  color: white;
-background-color: rgb(49, 208, 227);
-margin-left: 25px;
-}
-
-.buscar{
-text-align: center;
-}
-
-.buscar input {
-width: 350px;
-height: 35px;
-padding: 0 20px;
-font-size: 15px;
-outline: none;
-border: 1px solid silver;
-border-radius: 20px;
-}
-
-</style>
-<title>Natare</title>
-<meta charset="UTF-8">
-<meta name="description" content="Equipamiento de natación"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Equipamiento de natación">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natare - Natación</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+  <h1 tabindex="1">Natación</h1>
 
-<center><h1 tabindex="1">Natación</h1> </center>
+  <div class="row">
+    <div class="col-12 ejemplo">
+      <ul class="menu">
+        <li tabindex="2"><a href="index.html">Inicio</a></li>
+        <li tabindex="3"><a href="ropa.html">Ropa</a></li>
+        <li tabindex="4"><a href="accesorios.html">Accesorios</a></li>
+        <li tabindex="5"><a href="calzado.html">Calzado</a></li>
+        <li tabindex="6"><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </div>
+  </div>
 
-<div class="row">
-	<div class="col-12 ejemplo">
-<ul class="menu">
-<li tabindex="2"><a href="index.html">Inicio</a></li>
-<li tabindex="3"><a href="ropa.html">Ropa</a></li>
-<li tabindex="4"><a href="accesorios.html">Accesorios</a></li>
-<li tabindex="5"><a href="calzado.html">Calzado</a></li>
-<li tabindex="6"><a href="nosotros.html">Nosotros</a></li>
-</ul>
-	</div>
-</div>
-	
-<div class="row">
-	<div class="col-12 ejemplo buscar">
-	<input tabindex="7" type="text" placeholder="Buscar">
-	</div>
-</div>
-	
+  <div class="row">
+    <div class="col-12 ejemplo buscar">
+      <input tabindex="7" type="text" placeholder="Buscar">
+    </div>
+  </div>
 
- 	<div class="row">
-			<div class="col-3 ejemplo">
-		<h2 tabindex="8">Historia de la natación</h2>
+  <div class="row">
+    <div class="col-3 ejemplo">
+      <h2 tabindex="8">Historia de la natación</h2>
+      <img src="imagenes/historianatacion.jfif" alt="Historia de la Natación">
+    </div>
 
-		<img src="imagenes/historianatacion.jfif"/>
-			</div>
+    <div class="col-9 ejemplo">
+      <p tabindex="9" class="nosotros">
+        La natación es una práctica que ha acompañado a la humanidad desde tiempos remotos, siendo una habilidad vital y una forma de entretenimiento en diversas culturas alrededor del mundo. A lo largo de la historia, la natación ha desempeñado roles diversos, desde ser una habilidad necesaria para la supervivencia y el comercio hasta convertirse en un deporte competitivo y una actividad recreativa. Desde las primeras representaciones en antiguos grabados rupestres hasta la formalización de las primeras competiciones organizadas en el siglo XIX, la natación ha evolucionado significativamente, con la creación de diferentes estilos de nado, la introducción de técnicas modernas y el establecimiento de récords mundiales. Hoy en día, la natación es reconocida como uno de los deportes más completos, beneficiosos para la salud y accesibles para personas de todas las edades y habilidades, con un impacto duradero en la cultura y el bienestar humano.
+      </p>
+    </div>
+  </div>
 
-			<div class="col-9 ejemplo">
+  <div class="row">
+    <div class="col-9 ejemplo">
+      <p tabindex="11" class="nosotros">
+        La natación comprende una variedad de técnicas fundamentales que permiten a los nadadores desplazarse eficientemente en el agua. Algunas de las técnicas más comunes incluyen el estilo libre, donde los nadadores realizan un movimiento alternado de brazos mientras giran la cabeza para respirar; el estilo espalda, caracterizado por el nado boca arriba con un movimiento de brazos similar al estilo libre; el estilo pecho, reconocido por el movimiento de brazos en forma de círculo acompañado de una patada de rana sincronizada; y el estilo mariposa, que involucra un movimiento ondulante de brazos simultáneo y una patada de delfín. Cada técnica requiere un dominio específico de la coordinación corporal, la respiración y la fuerza para maximizar la eficiencia y la velocidad en el agua. Además, los nadadores pueden emplear variantes y combinaciones de estas técnicas según sus preferencias y objetivos de entrenamiento.
+      </p>
+    </div>
 
-<br><br><br><p tabindex="9" class="nosotros">La natación es una práctica que ha acompañado a la humanidad desde tiempos remotos, siendo una habilidad vital y una forma de entretenimiento en diversas culturas alrededor del mundo. A lo largo de la historia, la natación ha desempeñado roles diversos, desde ser una habilidad necesaria para la supervivencia y el comercio hasta convertirse en un deporte competitivo y una actividad recreativa. Desde las primeras representaciones en antiguos grabados rupestres hasta la formalización de las primeras competiciones organizadas en el siglo XIX, la natación ha evolucionado significativamente, con la creación de diferentes estilos de nado, la introducción de técnicas modernas y el establecimiento de récords mundiales. Hoy en día, la natación es reconocida como uno de los deportes más completos, beneficiosos para la salud y accesibles para personas de todas las edades y habilidades, con un impacto duradero en la cultura y el bienestar humano.</p>
-			</div>
-	</div>
+    <div class="col-3 ejemplo">
+      <h2 tabindex="10">Técnicas de la natación</h2>
+      <img src="imagenes/tecnicas.jfif" alt="Técnicas de la Natación">
+    </div>
+  </div>
 
-	<div class="row">
-			<div class="col-9 ejemplo">
-<br><br><br><br><p tabindex="11" class="nosotros">La natación comprende una variedad de técnicas fundamentales que permiten a los nadadores desplazarse eficientemente en el agua. Algunas de las técnicas más comunes incluyen el estilo libre, donde los nadadores realizan un movimiento alternado de brazos mientras giran la cabeza para respirar; el estilo espalda, caracterizado por el nado boca arriba con un movimiento de brazos similar al estilo libre; el estilo pecho, reconocido por el movimiento de brazos en forma de círculo acompañado de una patada de rana sincronizada; y el estilo mariposa, que involucra un movimiento ondulante de brazos simultáneo y una patada de delfín. Cada técnica requiere un dominio específico de la coordinación corporal, la respiración y la fuerza para maximizar la eficiencia y la velocidad en el agua. Además, los nadadores pueden emplear variantes y combinaciones de estas técnicas según sus preferencias y objetivos de entrenamiento.
-</p>
+  <div class="row">
+    <div class="col-3 ejemplo">
+      <h2 tabindex="12">Beneficios para la salud</h2>
+      <img src="imagenes/beneficiosalasalud.jfif" alt="Beneficios para la Salud">
+    </div>
 
-			</div>
+    <div class="col-9 ejemplo">
+      <p tabindex="13" class="nosotros">
+        La natación ofrece una amplia gama de beneficios para la salud tanto física como mental. Desde mejorar la resistencia cardiovascular y fortalecer los músculos hasta aumentar la flexibilidad y promover la pérdida de peso, la natación es un ejercicio completo que trabaja todos los grupos musculares sin ejercer presión sobre las articulaciones. Además, al ser una actividad de bajo impacto, es ideal para personas de todas las edades y niveles de condición física, incluidos aquellos con lesiones o condiciones médicas preexistentes. La natación también tiene efectos positivos en la salud mental, ayudando a reducir el estrés, mejorar el estado de ánimo y promover la relajación. Al sumergirse en el agua, los nadadores experimentan una sensación de calma y bienestar, lo que contribuye a un equilibrio general entre el cuerpo y la mente. En resumen, la natación es una forma altamente beneficiosa de ejercicio que ofrece una combinación única de mejoras físicas y mentales para la salud a largo plazo.
+      </p>
+    </div>
+  </div>
 
-			<div class="col-3 ejemplo">
-		<h2 tabindex="10">Técnicas de la natación</h2>
-		<img src="imagenes/tecnicas.jfif"/>
-			</div>
-	</div>
-
-
-		<div class="row">
-
-	<div class="col-3 ejemplo">
-		<h2 tabindex="12">Beneficios para la salud</h2>
-		<img src="imagenes/beneficiosalasalud.jfif"/>
-	</div>
-
-
-			<div class="col-9 ejemplo">
-<br><br><br><p tabindex="13" class="nosotros">La natación ofrece una amplia gama de beneficios para la salud tanto física como mental. Desde mejorar la resistencia cardiovascular y fortalecer los músculos hasta aumentar la flexibilidad y promover la pérdida de peso, la natación es un ejercicio completo que trabaja todos los grupos musculares sin ejercer presión sobre las articulaciones. Además, al ser una actividad de bajo impacto, es ideal para personas de todas las edades y niveles de condición física, incluidos aquellos con lesiones o condiciones médicas preexistentes. La natación también tiene efectos positivos en la salud mental, ayudando a reducir el estrés, mejorar el estado de ánimo y promover la relajación. Al sumergirse en el agua, los nadadores experimentan una sensación de calma y bienestar, lo que contribuye a un equilibrio general entre el cuerpo y la mente. En resumen, la natación es una forma altamente beneficiosa de ejercicio que ofrece una combinación única de mejoras físicas y mentales para la salud a largo plazo.</p>
-
-			</div>
-	</div>
-
-<div class="row">
-	<div class="col-12 ejemplo">
-	<center><iframe tabindex="14" width="350" height="200" src="https://www.youtube.com/embed/KOJ2R9-df68?si=mvfjbfiFrxahW7Wa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-
-</div>
+  <div class="row">
+    <div class="col-12 ejemplo">
+      <center>
+        <iframe tabindex="14" width="350" height="200" src="https://www.youtube.com/embed/KOJ2R9-df68?si=mvfjbfiFrxahW7Wa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </center>
+    </div>
+  </div>
 
 </body>
 </html>
