@@ -1,213 +1,490 @@
 /* =========================
-    CSS Común a Todas las Páginas
+   Variables de Color y Fuente
    ========================= */
-
-/* Box Sizing */
-* {
-    box-sizing: border-box;
-}
-
-/* Imágenes Responsivas */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Videos Responsivos */
-video {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Sistema de Filas y Columnas */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-/* Columnas para Dispositivos Móviles */
-[class*="col-"] {
-    width: 100%;
-}
-
-/* Columnas para Pantallas de Escritorio */
-@media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
-/* Estilos para el Contenedor Principal */
-div.ejemplo {
-    background-color: rgb(99, 68, 223);
-    color: white;
-}
-
-@media only screen and (min-width: 601px) {
-    div.ejemplo {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    div.ejemplo {
-        font-family: Garamond;
-        font-size: 20px;
-    }
-}
-
-/* Menú de Navegación */
-.menu {
-    list-style: none;
-    padding: 0;
-    background-color: rgb(34, 5, 152);
-    width: 55%;
-    max-width: 1000px;
-    margin: auto;
-    font-size: 150%;
-}
-
-.menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
-}
-
-.menu li a:hover {
-    background-color: rgb(49, 208, 227);
-}
-
-/* Estilos del Cuerpo */
-body {
-    background-color: rgb(99, 68, 223);
+   :root {
+    --color-primario: #0066cc;
+    --color-secundario: #ffffff;
+    --color-hover: #004c99;
+    --color-boton: #008cba;
+    --color-boton-hover: #005f5f;
+    --fuente-primaria: 'Roboto', sans-serif;
+  }
+  
+  /* =========================
+     Estilos Generales
+     ========================= */
+  body {
     margin: 0;
     padding: 0;
-}
-
-/* Botones */
-.boton {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+    font-family: var(--fuente-primaria);
+    background-color: var(--color-secundario);
+    color: #333;
+  }
+  
+  a {
+    color: inherit;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-}
-
-.boton:hover {
-    background-color: rgb(169, 2, 177);
-    color: white;
-}
-
-/* Encabezados */
-h1 {
-    font-family: Garamond, serif;
-    color: white;
-    font-size: 400%;
-    text-align: center;
-}
-
-h2 {
-    font-family: Garamond, serif;
-    font-size: 300%;
-    text-align: center;
-}
-
-h3 {
-    font-family: Garamond, serif;
-    font-size: 200%;
-    text-align: left;
-    margin-left: 25px;
-}
-
-/* Párrafos */
-p {
-    font-family: Arial, sans-serif;
-    font-size: 100%;
-    text-align: left;
-    margin: 25px;
-}
-
-/* Clase Específica */
-.nosotros {
-    font-family: Garamond, serif;
-    font-size: 20px;
-}
-
-/* Buscador */
-.buscar {
-    text-align: center;
-}
-
-.buscar input {
-    width: 350px;
-    height: 35px;
-    padding: 0 20px;
-    font-size: 15px;
-    outline: none;
-    border: 1px solid silver;
+  }
+  
+  a:hover {
+    color: var(--color-hover);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* =========================
+     Barra de Navegación
+     ========================= */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
     border-radius: 20px;
-}
+    border: none;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item a {
+    color: var(--color-secundario);
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .menu-item:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-primario);
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content li a {
+    padding: 10px 15px;
+    color: var(--color-secundario);
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: var(--color-hover);
+  }
+  
+  .user-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-register {
+    color: var(--color-secundario);
+    margin-right: 20px;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .login-register:hover {
+    background-color: var(--color-hover);
+    color: var(--color-secundario);  
+  }
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .user-menu:hover .user-dropdown {
+    display: block;
+  }
+  
+  .user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--color-primario);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    top: 100%;
+    right: 0;
+    z-index: 1; /* Asegura que el menú aparezca sobre otros elementos */
+  }
 
-/* =========================
-    Estilos Específicos por Página
+  /* Aseguramos que los elementos de lista se dispongan verticalmente */
+.user-dropdown li {
+  display: block;
+}
+  
+  .user-dropdown li a {
+    display: block; /* Asegura que el enlace ocupe todo el ancho disponible */
+    padding: 10px 15px;
+    color: var(--color-secundario);
+    white-space: nowrap; /* Evita que el texto se parta en dos líneas */
+  }
+  
+  .user-dropdown li a:hover {
+    background-color: var(--color-hover);
+  }
+  
+  .cart img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+  
+  /* Resaltar Página Actual */
+  .nav-link {
+    color: var(--color-secundario);
+  }
+  
+  .nav-link.active {
+    background-color: var(--color-hover);
+    border-radius: 5px;
+  }
+  
+  /* =========================
+     Contenido Principal
+     ========================= */
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: var(--color-primario);
+  }
+  
+  .product-grid,
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-item,
+  .category-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .product-item img,
+  .category-item img {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-item h3,
+  .category-item h3 {
+    margin: 10px 0;
+  }
+  
+  .product-item p {
+    color: #555;
+  }
+  
+  button {
+    background-color: var(--color-boton);
+    color: var(--color-secundario);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-boton-hover);
+  }
+  
+  /* =========================
+     Formulario de Registro
+     ========================= */
+  .registro-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .registro-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .registro-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  /* =========================
+     Perfil de Usuario
+     ========================= */
+  .perfil {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* =========================
+     Historial de Compras
+     ========================= */
+  .historial-compras {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .historial-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .historial-item img {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .historial-info h3 {
+    margin-top: 0;
+  }
+  
+  /* =========================
+     Carrito de Compras
+     ========================= */
+  .carrito {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carrito-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .carrito-item img {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .carrito-total {
+    text-align: right;
+  }
+  
+  /* =========================
+     Detalle del Producto
+     ========================= */
+  .producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .producto-imagen {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .producto-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+  
+  .comentarios {
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .comentarios p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .mas-productos {
+    margin-top: 40px;
+  }
+  
+  .mas-productos .product-grid {
+    justify-content: flex-start;
+  }
+  
+  /* =========================
+     Página de Natación y Nosotros
+     ========================= */
+  .texto-limitado {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* =========================
+     Transiciones
+     ========================= */
+  button, .menu-item a, .dropdown-content a, .login-register {
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, .menu-item a:hover, .dropdown-content a:hover, .login-register:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* =========================
+   Estilos Específicos para nosotros.html
    ========================= */
 
-/* Nosotros.html */
-/* Estilos para enlaces de contacto */
-a.contacto:link {
-    font-family: Garamond, serif;
-    font-size: 20px;
-    color: white;
-    margin-left: 25px;
+/* Contenedor principal */
+.nosotros-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-a.contacto:hover {
-    font-family: Garamond, serif;
-    font-size: 20px;
-    color: white;
-    background-color: rgb(49, 208, 227);
-    margin-left: 25px;
+/* Estilos para el texto */
+.nosotros-texto {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
 }
 
+/* Estilos para las imágenes pequeñas */
+.img-pequena {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 250px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: cover;
+}
+
+/* Contenedor para las imágenes de valores */
+.contenedor-imagen {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Aseguramos que las imágenes en col-3 tengan el mismo tamaño */
+.col-3 .img-pequena {
+  max-height: 200px;
+}
+
+/* Ajustamos las imágenes en otras columnas si es necesario */
+.col-4 .img-pequena,
+.col-8 .img-pequena {
+  max-height: 250px;
+}
+
+/* Ajustes de los elementos en móvil */
+@media (max-width: 768px) {
+  .col-3, .col-4, .col-8, .col-9, .col-12 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .contenedor-imagen {
+    margin-bottom: 10px;
+  }
+
+  .img-pequena {
+    max-height: none;
+  }
+}
 /* =========================
-    Otros Estilos Específicos
+   Estilos para confirmacion.html
    ========================= */
-
-/* Si en el futuro hay estilos únicos para otras páginas, se pueden añadir aquí */
-/* Por ejemplo:
-
-/* ropa.html */
-/* Estilos únicos para ropa.html */
-
-/* calzado.html */
-/* Estilos únicos para calzado.html */
-
+   .confirmacion {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .confirmacion h1 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+  }
+  
+  .confirmacion p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .confirmacion button {
+    background-color: var(--color-boton);
+    color: var(--color-secundario);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .confirmacion button:hover {
+    background-color: var(--color-boton-hover);
+  }
+  
