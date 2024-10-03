@@ -1,7 +1,7 @@
 /* =========================
-   Variables de Color y Fuente
+    Variables de Color y Fuente
    ========================= */
-   :root {
+    :root {
     --color-primario: #0066cc;
     --color-secundario: #ffffff;
     --color-hover: #004c99;
@@ -11,7 +11,7 @@
   }
   
   /* =========================
-     Estilos Generales
+      Estilos Generales
      ========================= */
   body {
     margin: 0;
@@ -42,7 +42,7 @@
   }
   
   /* =========================
-     Barra de Navegación
+      Barra de Navegación
      ========================= */
   .navbar {
     display: flex;
@@ -183,7 +183,7 @@
   }
   
   /* =========================
-     Contenido Principal
+      Contenido Principal
      ========================= */
   main {
     padding: 20px;
@@ -237,7 +237,7 @@
   }
   
   /* =========================
-     Formulario de Registro
+      Formulario de Registro
      ========================= */
   .registro-form {
     max-width: 400px;
@@ -256,7 +256,7 @@
   }
   
   /* =========================
-     Perfil de Usuario
+      Perfil de Usuario
      ========================= */
   .perfil {
     max-width: 600px;
@@ -264,7 +264,7 @@
   }
   
   /* =========================
-     Historial de Compras
+      Historial de Compras
      ========================= */
   .historial-compras {
     max-width: 800px;
@@ -286,7 +286,7 @@
   }
   
   /* =========================
-     Carrito de Compras
+      Carrito de Compras
      ========================= */
   .carrito {
     max-width: 800px;
@@ -308,7 +308,7 @@
   }
   
   /* =========================
-     Detalle del Producto
+      Detalle del Producto
      ========================= */
   .producto-detalle {
     display: flex;
@@ -347,7 +347,7 @@
   }
   
   /* =========================
-     Página de Natación y Nosotros
+      Página de Natación y Nosotros
      ========================= */
   .texto-limitado {
     max-width: 800px;
@@ -377,7 +377,7 @@
   }
   
   /* =========================
-     Transiciones
+      Transiciones
      ========================= */
   button, .menu-item a, .dropdown-content a, .login-register {
     transition: background-color 0.3s;
@@ -388,7 +388,7 @@
   }
   
   /* =========================
-   Estilos Específicos para nosotros.html
+    Estilos Específicos para nosotros.html
    ========================= */
 
 /* Contenedor principal */
@@ -455,9 +455,9 @@
   }
 }
 /* =========================
-   Estilos para confirmacion.html
+    Estilos para confirmacion.html
    ========================= */
-   .confirmacion {
+  .confirmacion {
     max-width: 600px;
     margin: 50px auto;
     text-align: center;
