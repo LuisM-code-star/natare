@@ -1,33 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/home'
+import Natacion from './pages/natacion'
+import Nosotros from './pages/nosotros'
+import HeaderNav from './components/header'
+import Accesorios from './pages/accesorios'
+import Ropa from './pages/ropa'
+import Calzado from './pages/calzado'
+import ProductoDetalle from './pages/Producto'
+import Carrito from './pages/carrito'
+import Confirmacion from './pages/Confirmacion'
+import HistorialCompras from './pages/HistorialCompras'
+import PerfilUsuario from './pages/PerfilUsuario'
+import RegistroUsuario from './pages/RegistroUsuario'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Prueba</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <HeaderNav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/natacion" element={<Natacion />} />
+        <Route path="/accesorios" element={<Accesorios />} />
+        <Route path="/ropa" element={<Ropa />} />
+        <Route path="/calzado" element={<Calzado />} />
+        <Route path="/producto-detalle" element={<ProductoDetalle />} />
+        <Route path="/carrito" element={<Carrito />} />
+        <Route path="/confirmacion" element={<Confirmacion />} />
+        <Route path="/historial-compras" element={<HistorialCompras />} />
+        <Route path="/perfil-usuario" element={<PerfilUsuario />} />
+        <Route path="/registro-usuario" element={<RegistroUsuario />} />
+      </Routes>
     </>
   )
 }
