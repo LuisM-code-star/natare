@@ -1,0 +1,490 @@
+/* =========================
+    Variables de Color y Fuente
+   ========================= */
+    :root {
+    --color-primario: #0066cc;
+    --color-secundario: #ffffff;
+    --color-hover: #004c99;
+    --color-boton: #008cba;
+    --color-boton-hover: #005f5f;
+    --fuente-primaria: 'Roboto', sans-serif;
+  }
+  
+  /* =========================
+      Estilos Generales
+     ========================= */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-primaria);
+    background-color: var(--color-secundario);
+    color: #333;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-hover);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* =========================
+      Barra de Navegación
+     ========================= */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item a {
+    color: var(--color-secundario);
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .menu-item:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-primario);
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content li a {
+    padding: 10px 15px;
+    color: var(--color-secundario);
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: var(--color-hover);
+  }
+  
+  .user-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-register {
+    color: var(--color-secundario);
+    margin-right: 20px;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .login-register:hover {
+    background-color: var(--color-hover);
+    color: var(--color-secundario);  
+  }
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .user-menu:hover .user-dropdown {
+    display: block;
+  }
+  
+  .user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--color-primario);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    top: 100%;
+    right: 0;
+    z-index: 1; /* Asegura que el menú aparezca sobre otros elementos */
+  }
+
+  /* Aseguramos que los elementos de lista se dispongan verticalmente */
+.user-dropdown li {
+  display: block;
+}
+  
+  .user-dropdown li a {
+    display: block; /* Asegura que el enlace ocupe todo el ancho disponible */
+    padding: 10px 15px;
+    color: var(--color-secundario);
+    white-space: nowrap; /* Evita que el texto se parta en dos líneas */
+  }
+  
+  .user-dropdown li a:hover {
+    background-color: var(--color-hover);
+  }
+  
+  .cart img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+  
+  /* Resaltar Página Actual */
+  .nav-link {
+    color: var(--color-secundario);
+  }
+  
+  .nav-link.active {
+    background-color: var(--color-hover);
+    border-radius: 5px;
+  }
+  
+  /* =========================
+      Contenido Principal
+     ========================= */
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: var(--color-primario);
+  }
+  
+  .product-grid,
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-item,
+  .category-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .product-item img,
+  .category-item img {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-item h3,
+  .category-item h3 {
+    margin: 10px 0;
+  }
+  
+  .product-item p {
+    color: #555;
+  }
+  
+  button {
+    background-color: var(--color-boton);
+    color: var(--color-secundario);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-boton-hover);
+  }
+  
+  /* =========================
+      Formulario de Registro
+     ========================= */
+  .registro-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .registro-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .registro-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  /* =========================
+      Perfil de Usuario
+     ========================= */
+  .perfil {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* =========================
+      Historial de Compras
+     ========================= */
+  .historial-compras {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .historial-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .historial-item img {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .historial-info h3 {
+    margin-top: 0;
+  }
+  
+  /* =========================
+      Carrito de Compras
+     ========================= */
+  .carrito {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carrito-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .carrito-item img {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .carrito-total {
+    text-align: right;
+  }
+  
+  /* =========================
+      Detalle del Producto
+     ========================= */
+  .producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .producto-imagen {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .producto-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+  
+  .comentarios {
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .comentarios p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .mas-productos {
+    margin-top: 40px;
+  }
+  
+  .mas-productos .product-grid {
+    justify-content: flex-start;
+  }
+  
+  /* =========================
+      Página de Natación y Nosotros
+     ========================= */
+  .texto-limitado {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* =========================
+      Transiciones
+     ========================= */
+  button, .menu-item a, .dropdown-content a, .login-register {
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, .menu-item a:hover, .dropdown-content a:hover, .login-register:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* =========================
+    Estilos Específicos para nosotros.html
+   ========================= */
+
+/* Contenedor principal */
+.nosotros-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para el texto */
+.nosotros-texto {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
+
+/* Estilos para las imágenes pequeñas */
+.img-pequena {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 250px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: cover;
+}
+
+/* Contenedor para las imágenes de valores */
+.contenedor-imagen {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Aseguramos que las imágenes en col-3 tengan el mismo tamaño */
+.col-3 .img-pequena {
+  max-height: 200px;
+}
+
+/* Ajustamos las imágenes en otras columnas si es necesario */
+.col-4 .img-pequena,
+.col-8 .img-pequena {
+  max-height: 250px;
+}
+
+/* Ajustes de los elementos en móvil */
+@media (max-width: 768px) {
+  .col-3, .col-4, .col-8, .col-9, .col-12 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .contenedor-imagen {
+    margin-bottom: 10px;
+  }
+
+  .img-pequena {
+    max-height: none;
+  }
+}
+/* =========================
+    Estilos para confirmacion.html
+   ========================= */
+  .confirmacion {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .confirmacion h1 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+  }
+  
+  .confirmacion p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .confirmacion button {
+    background-color: var(--color-boton);
+    color: var(--color-secundario);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .confirmacion button:hover {
+    background-color: var(--color-boton-hover);
+  }
+  

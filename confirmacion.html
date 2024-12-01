@@ -2,15 +2,16 @@
 <html lang="es-MX">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Accesorios de natación">
+  <meta name="description" content="Confirmación de compra">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natare - Accesorios</title>
+  <title>Natare - Confirmación de Compra</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <!-- Header con Barra de Navegación -->
   <header>
+    <!-- (Mismo código de navegación que en index.html) -->
     <nav class="navbar">
       <!-- Logo -->
       <div class="logo">
@@ -27,10 +28,10 @@
       <!-- Menú de Navegación -->
       <ul class="menu">
         <li class="menu-item">
-          <a href="index.html">Inicio</a>
+          <a href="index.html" class="nav-link">Inicio</a>
         </li>
         <li class="menu-item dropdown">
-          <a href="#">Categorías</a>
+          <a href="#" class="nav-link">Categorías</a>
           <ul class="dropdown-content">
             <li><a href="ropa.html">Ropa</a></li>
             <li><a href="calzado.html">Calzado</a></li>
@@ -38,17 +39,19 @@
           </ul>
         </li>
         <li class="menu-item">
-          <a href="natacion.html">Natación</a>
+          <a href="natacion.html" class="nav-link">Natación</a>
         </li>
         <li class="menu-item">
-          <a href="nosotros.html">Nosotros</a>
+          <a href="nosotros.html" class="nav-link">Nosotros</a>
         </li>
       </ul>
 
       <!-- Opciones de Usuario -->
       <div class="user-options">
         <!-- Iniciar Sesión / Registrarse -->
-        <a href="registro.html" class="login-register">Iniciar sesión/Regístrate</a>
+        <div class="menu-item">
+          <a href="registro.html" class="login-register">Iniciar sesión/Regístrate</a>
+        </div>
 
         <!-- Menú de Usuario -->
         <div class="user-menu">
@@ -71,40 +74,13 @@
 
   <!-- Contenido Principal -->
   <main>
-    <h1>Accesorios</h1>
-    <div class="product-grid">
-      <!-- Producto 1 -->
-      <div class="product-item">
-        <a href="producto.html">
-          <img src="imagenes/accesorios/paletas.jfif" alt="Paletas">
-          <h3>Paletas</h3>
-          <p>$250.00</p>
-        </a>
-      </div>
-      <!-- Producto 2 -->
-      <div class="product-item">
-        <a href="producto.html">
-          <img src="imagenes/accesorios/gorro.avif" alt="Gorro">
-          <h3>Gorro</h3>
-          <p>$280.00</p>
-        </a>
-      </div>
-      <!-- Producto 3 -->
-      <div class="product-item">
-        <a href="producto.html">
-          <img src="imagenes/accesorios/goggle.jpg" alt="Goggles">
-          <h3>Goggles</h3>
-          <p>$320.00</p>
-        </a>
-      </div>
-      <!-- Producto 4 -->
-      <div class="product-item">
-        <a href="producto.html">
-          <img src="imagenes/accesorios/aletas.avif" alt="Aletas">
-          <h3>Aletas</h3>
-          <p>$550.00</p>
-        </a>
-      </div>
+    <div class="confirmacion">
+      <h1>¡Gracias por tu compra!</h1>
+      <p>Tu pedido ha sido procesado exitosamente.</p>
+      <p>Hemos enviado un correo de confirmación a tu dirección de email con los detalles de tu pedido.</p>
+      <p>Número de pedido: <strong>#123456789</strong></p>
+      <p>Si tienes alguna pregunta, por favor contáctanos a través de nuestro <a href="nosotros.html#contacto">Centro de Ayuda</a>.</p>
+      <button onclick="window.location.href='index.html'">Volver al Inicio</button>
     </div>
   </main>
 
